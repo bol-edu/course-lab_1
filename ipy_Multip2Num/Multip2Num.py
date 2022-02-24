@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     print("Start of \"" + sys.argv[0] + "\"")
 
-    ol = Overlay("/home/xilinx/jupyter_notebooks/r10943138/lab1/Multip2Num.bit")
+    ol = Overlay("/home/xilinx/IPBitFile/Multip2Num.bit")
     regIP = ol.multip_2num_0
     
     for i in range(9):
