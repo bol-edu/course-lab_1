@@ -6,9 +6,10 @@
 
 from __future__ import print_function
 
-import sys
+import sys, os
 
 sys.path.append('/home/xilinx')
+os.environ['XILINX_XRT'] = '/usr'
 from pynq import Overlay
 
 if __name__ == "__main__":
