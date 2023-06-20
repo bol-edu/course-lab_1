@@ -1,3 +1,6 @@
+## Ubuntu 20.04+ Virtual Machine on Windows
+[Manual of setup Ubuntu 20.04+ VM](https://github.com/bol-edu/soclab-nthusp23/files/11799408/Ubuntu_VM_on_Windows.pdf).
+
 ## Install Xilinx Vitis on Ubuntu 20.04+ Machine
 The Xilinx Vitis 2022.1 can be installed on a physical/virtual Ubuntu 20.04+ machine.
 * Install necessary dependencies before Vitis installation: `sudo apt install libtinfo5 libncurses5 -y`
