@@ -8,5 +8,4 @@
 * Refer the [HLS Tools Installation Guide 2022.1 of Windows](https://github.com/bol-edu/course-lab_1/blob/2022.1/HLS%20Tools%20Installation%20Guide%202022.1.pdf)  
 * Add below lines to `/home/<user>/.bashrc` after completing Vitis installation  
 `source <Vitis_install_path>/Xilinx/Vitis/2022.1/settings64.sh`  
-`source <Vitis_install_path>/xilinx/xrt/setup.sh`  
 * Before running Vitis `source /home/<user>/.bashrc`
