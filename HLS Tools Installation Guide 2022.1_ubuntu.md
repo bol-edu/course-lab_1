@@ -6,6 +6,6 @@
 * Install necessary dependencies before Vitis installation: `sudo apt install libtinfo5 libncurses5 -y`
 * Offical installation guide: https://docs.xilinx.com/r/2022.1-English/ug1400-vitis-embedded/Installation-Requirements  
 * Add below line to `/home/<user>/.bashrc` after completing Vitis installation  
-`source /<Vitis_install_path>/Xilinx/Vitis/2022.1/settings64.sh`  
+`source <Vitis_install_path>/Xilinx/Vitis/2022.1/settings64.sh`  
 * [Manual of Vitis_on_Ubuntu_VM](https://github.com/bol-edu/course-lab_1/files/11812135/Vitis_on_Ubuntu_VM.pdf)
 
