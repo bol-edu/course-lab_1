@@ -11,10 +11,10 @@ The Workbook-Lab1 was tested on Windows host Vitis. While you running Workbook-L
 ![001](https://github.com/bol-edu/course-lab_1/assets/98332019/651c4b19-be65-46e2-9f1b-6fba00d3b294)
 
 * `vitis_hls` is running as a GUI. It is slow under MobaXterm and sometimes the GUI is not working you need to restart MobaXterm.    
-* Changing original `#include "multiplication.h"` to `#include "Multiplication.h"` in Multiplication.cpp
+* Changing original `#include "multiplication.h"` to `#include "Multiplication.h"` in Multiplication.cpp at p.5 of 2022.1-Workbook-Lab1.pdf.
   
 ![002](https://github.com/bol-edu/course-lab_1/assets/98332019/91fe5cd8-07b0-4335-8c48-fb0fd1136f07)
 
-* Changing original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp
+* Changing original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp at p.5 of 2022.1-Workbook-Lab1.pdf.
 
 ![003](https://github.com/bol-edu/course-lab_1/assets/98332019/5e736128-9d1b-4d57-b6d2-31f36f2ca0cb)
