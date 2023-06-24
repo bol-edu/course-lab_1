@@ -5,7 +5,7 @@ PYNQ-Z2 SD card image: v2.7
 [Youtube Demo Video](https://youtu.be/bXwMO-fN6BM) (Vitis version: 2020.2)
 
 # Running 2022.1-Workbook-Lab1 on Ubuntu VM
-The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022.1/2022.1-Workbook-Lab1.pdf) was tested on Windows host Vitis. While you running Workbook-Lab1 on Ubuntu VM, below items are needed to concern.
+The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022.1/2022.1-Workbook-Lab1.pdf) was tested on Windows host Vitis. While you running Workbook on Ubuntu VM, below items are needed to concern.
 * The Vitis HLS can be invoked by two ways: (1) using MobaXterm SSH to Ubuntu VM and executing `vitis_hls` (2) opening Ubuntu VM terminal and executing `vitis_hls`(recommended).
     
 ![001](https://github.com/bol-edu/course-lab_1/assets/98332019/651c4b19-be65-46e2-9f1b-6fba00d3b294)
@@ -28,7 +28,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![vivado](https://github.com/bol-edu/course-lab_1/assets/98332019/8f639328-e9e2-492e-8988-6e2082878271)
 
 * Generate Bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs (Vivado launching runs) at Workbook p.20.
-* The Windows `MakeBit.bat` can not work on Ubuntu VM at Workbook p.21, please refer the provided cp_example. The cp_example assume your Vivado project is `/home/ubuntu/lab1_vivado` created at Workbook p.13. You can replace `lab1_vivado` in following cp_example with your own Vivado project name.
+* The Windows `MakeBit.bat` can not work on Ubuntu VM at Workbook p.21, please refer the provided cp_example. The cp_example assume your Vivado project is `/home/ubuntu/lab1_vivado` created at Workbook p.13. You can replace `lab1_vivado` name in following cp_example with your own Vivado project name.
 ```console
 cd ~/lab1_vivado
 cp ./lab1_vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
@@ -65,13 +65,13 @@ jupyter web ip port is 140.112.207.200:20500, web passwd is EjbnxV and timeup at
 ```
 ![pynq00](https://github.com/bol-edu/course-lab_1/assets/98332019/6d432bb8-759e-40ea-82fb-de039dd3a10c)
 
-Upload `Multip2Num.bit`, `Multip2Num.hwh` and [Multip2Num.ipynb](https://github.com/bol-edu/course-lab_1/blob/2022.1/ipy_Multip2Num/Multip2Num.ipynb) to Jupyter Notebook from local
+Upload `Multip2Num.bit`, `Multip2Num.hwh` and [Multip2Num.ipynb](https://github.com/bol-edu/course-lab_1/blob/2022.1/ipy_Multip2Num/Multip2Num.ipynb) to Jupyter Notebook from local via web browser. (Not MobaXterm as Workbook p.21)
 
 ![pynq01](https://github.com/bol-edu/course-lab_1/assets/98332019/0b23df28-f28d-45b6-af34-58c404089b3d)
 
 ![pynq02](https://github.com/bol-edu/course-lab_1/assets/98332019/b4981f5d-1f2d-459f-9236-b84130a43c6d)
 
-* Click `Multip2Num.ipynb` and Run the cell
+* Click `Multip2Num.ipynb` and Run the cell.
 
 ![pynq03](https://github.com/bol-edu/course-lab_1/assets/98332019/ff06fc30-c7c5-4691-afb7-49690c5b22cd)
 
