@@ -6,7 +6,7 @@ PYNQ-Z2 SD card image: v2.7
 
 # Running Workbook-Lab1 on Ubuntu VM
 The Workbook-Lab1 was tested on Windows host Vitis. While you running Workbook-Lab1 on Ubuntu VM, something are needed to change.
-* The Vitis HLS can be invoked by two ways: (1) using MobaXterm SSH to Ubuntu VM and executing `vitis_hls` (2) logging Ubuntu VM opening terminal and and executing `vitis_hls`(recommend).
+* The Vitis HLS can be invoked by two ways: (1) using MobaXterm SSH to Ubuntu VM and executing `vitis_hls` (2) opening Ubuntu VM terminal and executing `vitis_hls`(recommend).
     
 ![001](https://github.com/bol-edu/course-lab_1/assets/98332019/651c4b19-be65-46e2-9f1b-6fba00d3b294)
 
