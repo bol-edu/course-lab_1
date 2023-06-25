@@ -5,25 +5,43 @@ PYNQ-Z2 SD card image: v2.7
 [Youtube Demo Video](https://youtu.be/bXwMO-fN6BM) (Vitis version: 2020.2)
 
 # Running 2022.1-Workbook-Lab1 on Ubuntu VM
-The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022.1/2022.1-Workbook-Lab1.pdf) was tested on Windows host Vitis. While you running Workbook on Ubuntu VM, below items are needed to concern.
+The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022.1/2022.1-Workbook-Lab1.pdf) was tested on Windows host Vitis. While you running Workbook on Ubuntu VM, some items are needed to concern in following experimental steps.
+
+## Vitis HLS
 * The Vitis HLS can be invoked by two ways: (1) using MobaXterm SSH to Ubuntu VM and executing `vitis_hls` (2) opening Ubuntu VM terminal and executing `vitis_hls`(recommended).
-    
-![001](https://github.com/bol-edu/course-lab_1/assets/98332019/651c4b19-be65-46e2-9f1b-6fba00d3b294)
+* `vitis_hls` is running as a GUI. It is maybe slow under MobaXterm connection and while remote GUI is not working you need to restart MobaXterm.
+* `git clone https://github.com/bol-edu/course-lab_1 ~/course-lab_1`, then change to `/course-lab_1` and execute `vitis_hls`.
 
-* `vitis_hls` is running as a GUI. It is slow under MobaXterm and sometimes the GUI is not working you need to restart MobaXterm.    
-* Changing original `#include "multiplication.h"` to `#include "Multiplication.h"` in Multiplication.cpp at Workbook p.5.
+![hls00](https://github.com/bol-edu/course-lab_1/assets/98332019/48d7250d-43b9-4399-b6e2-46cd71f21a5c)
   
-![002](https://github.com/bol-edu/course-lab_1/assets/98332019/91fe5cd8-07b0-4335-8c48-fb0fd1136f07)
+* Click Create Project and name Project `hls_ip` under directory `~/course-lab_1`
 
-* Changing original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp at Workbook p.5.
+![hls01](https://github.com/bol-edu/course-lab_1/assets/98332019/7c3da69d-97b3-4c03-8e10-51b5a8f26aff)
 
-![003](https://github.com/bol-edu/course-lab_1/assets/98332019/5e736128-9d1b-4d57-b6d2-31f36f2ca0cb)
+* Change Part to `xc7z020clg400-1` which is explained as Workbook p.4.
 
-* Comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` before running C Synthesis & Cosimulation at Workbook p.8 & p.9. (Both on Windows host Vitis & Ubuntu VM)
+![hls02](https://github.com/bol-edu/course-lab_1/assets/98332019/0441a8d3-9310-433f-a479-fa0d800af037)
 
-![04](https://github.com/bol-edu/course-lab_1/assets/98332019/97e21e36-bef7-403d-97a4-ca8aae108910)
+* Righ click on hls_ip/Source -> New Source File -> add `Multiplication.cpp` and `Multiplication.h` from `~/course-lab_1/hls_Multiplication`
+* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in Multiplication.cpp and save.
   
-* After Export RTL as IP is OK, then you need to close Vitis HLS GUI and execute `vivado` at Workbook p.12.
+![hls03](https://github.com/bol-edu/course-lab_1/assets/98332019/7ea308ab-c812-4b0f-9e63-6475a6637562)
+
+* Righ click on hls_ip/Test Bench -> New Source File -> add `MultipTester.cpp` from `~/course-lab_1/hls_Multiplication`
+* Changing original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save.
+
+![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/db39411c-9fdf-4bc8-a961-6306a60c1895)
+
+* Set Synthesis Settings - Top Function name is `multip_2num` as Workbook p.6.
+* Comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` before running C Synthesis & Cosimulation as Workbook p.8 & p.9.
+
+![hls05](https://github.com/bol-edu/course-lab_1/assets/98332019/177290ec-0bc1-4a69-bf7c-39d74d11b66a)
+
+* Complete validations of C Simulation, C Synthesis, Cosimulation (Dump Trace all) and Open Wave Veiwer for your designed multiplier as Workbook p.7~p.11.
+* Export RTL as IP as Workbook p.11. Your designed multiplier `multip_2num` saved as a IP in directory `~/course-lab_1/hls_ip` which can be reused in later Vivado block design.
+  
+## Vivado
+* Close Vitis HLS GUI and execute `vivado` at Workbook p.12.
 
 ![vivado](https://github.com/bol-edu/course-lab_1/assets/98332019/8f639328-e9e2-492e-8988-6e2082878271)
 
@@ -34,6 +52,7 @@ cd ~/lab1_vivado
 cp ./lab1_vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
 cp ./lab1_vivado.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh ./Multip2Num.hwh
 ```
+## PYNQ-Z2 Board
 * Rent your pynq-z2 board from OnlineFPGA and connect it via web browser
 ```
 all online device boards
