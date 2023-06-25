@@ -28,11 +28,11 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![hls03](https://github.com/bol-edu/course-lab_1/assets/98332019/7ea308ab-c812-4b0f-9e63-6475a6637562)
 
 * Righ click on hls_ip/Test Bench -> New Source File -> add `MultipTester.cpp` from `~/course-lab_1/hls_Multiplication`
-* Changing original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save.
+* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save.
 
 ![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/db39411c-9fdf-4bc8-a961-6306a60c1895)
 
-* Set Synthesis Settings - Top Function name is `multip_2num` as Workbook p.6.
+* Set Synthesis Settings - Top Function name to `multip_2num` as Workbook p.6.
 * Comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` before running C Synthesis & Cosimulation as Workbook p.8 & p.9.
 
 ![hls05](https://github.com/bol-edu/course-lab_1/assets/98332019/177290ec-0bc1-4a69-bf7c-39d74d11b66a)
