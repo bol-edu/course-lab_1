@@ -41,16 +41,16 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 * Export RTL as IP as Workbook p.11. Your designed multiplier `multip_2num` saved as a IP in directory `~/course-lab_1/hls_ip` which can be reused in later Vivado block design.
   
 ## Vivado
-* Close Vitis HLS GUI and execute `vivado` at Workbook p.12.
+* Close Vitis HLS GUI and execute `vivado` as Workbook p.12.
 
-![vivado](https://github.com/bol-edu/course-lab_1/assets/98332019/8f639328-e9e2-492e-8988-6e2082878271)
+![vivado00](https://github.com/bol-edu/course-lab_1/assets/98332019/72290594-2f1d-43d3-a1dd-577c2e7f0ecd)
 
 * Generate Bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs (Vivado launching runs) at Workbook p.20.
 * The Windows `MakeBit.bat` can not work on Ubuntu VM at Workbook p.21, please refer the provided cp_example. The cp_example assume your Vivado project is `/home/ubuntu/lab1_vivado` created at Workbook p.13. You can replace `lab1_vivado` name in following cp_example with your own Vivado project name.
 ```console
-cd ~/lab1_vivado
-cp ./lab1_vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
-cp ./lab1_vivado.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh ./Multip2Num.hwh
+cd ~/course-lab_1
+cp ./vivado/vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
+cp ./vivado/vivado.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh ./Multip2Num.hwh
 ```
 ## PYNQ-Z2 Board
 * Rent your pynq-z2 board from OnlineFPGA and connect it via web browser
@@ -90,7 +90,7 @@ Upload `Multip2Num.bit`, `Multip2Num.hwh` and [Multip2Num.ipynb](https://github.
 
 ![pynq02](https://github.com/bol-edu/course-lab_1/assets/98332019/b4981f5d-1f2d-459f-9236-b84130a43c6d)
 
-* Click `Multip2Num.ipynb` and Run the cell.
+* Click `Multip2Num.ipynb` to open in new tab and Run its cell.
 
 ![pynq03](https://github.com/bol-edu/course-lab_1/assets/98332019/ff06fc30-c7c5-4691-afb7-49690c5b22cd)
 
