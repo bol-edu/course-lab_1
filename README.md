@@ -46,7 +46,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![vivado00](https://github.com/bol-edu/course-lab_1/assets/98332019/72290594-2f1d-43d3-a1dd-577c2e7f0ecd)
 
 * Generate Bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs (Vivado launching runs) at Workbook p.20.
-* The Windows `MakeBit.bat` can not work on Ubuntu VM at Workbook p.21, please refer the provided cp_example. The cp_example assume your Vivado project is `/home/ubuntu/lab1_vivado` created at Workbook p.13. You can replace `lab1_vivado` name in following cp_example with your own Vivado project name.
+* The Windows `MakeBit.bat` can not work on Ubuntu VM at Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `/home/ubuntu/course-lab_1/vivado` created at Workbook p.13.
 ```console
 cd ~/course-lab_1
 cp ./vivado/vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
