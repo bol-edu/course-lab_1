@@ -37,7 +37,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 
 ![hls05](https://github.com/bol-edu/course-lab_1/assets/98332019/177290ec-0bc1-4a69-bf7c-39d74d11b66a)
 
-* Complete validations of C Simulation, C Synthesis, Cosimulation (Dump Trace all) and Open Wave Veiwer for your designed multiplier as Workbook p.7~p.11.
+* Complete validations of C Simulation, C Synthesis, Cosimulation (Dump Trace all) and Open Wave Veiwer for your designed multiplier as Workbook p.7 ~ p.11.
 * Export RTL as IP as Workbook p.11. Your designed multiplier `multip_2num` saved as a IP in directory `~/course-lab_1/hls_ip` which can be reused in later Vivado block design.
   
 ## Vivado
@@ -52,8 +52,16 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![vivado03](https://github.com/bol-edu/course-lab_1/assets/98332019/61b4d83c-a5bc-4b23-ad2c-8307cb7fdcf0)
 ![vivado04](https://github.com/bol-edu/course-lab_1/assets/98332019/8cbd7dce-4521-4b00-95f1-f844fde70b15)
 
-* Generate Bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs (Vivado launching runs) at Workbook p.20.
-* The Windows `MakeBit.bat` can not work on Ubuntu VM at Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `/home/ubuntu/course-lab_1/vivado` created at Workbook p.13.
+* Setting -> IP -> Repository -> IP Repositories -> ＋ -> ~/course-lab_1 -> hls_ip -> select -> Multip_2num -> OK
+
+![vivado05](https://github.com/bol-edu/course-lab_1/assets/98332019/259b9725-1a62-4082-bddf-a821495b82e1)
+![vivado06](https://github.com/bol-edu/course-lab_1/assets/98332019/8052fd17-46c0-425c-b866-102c55ff7c52)
+![vivado07](https://github.com/bol-edu/course-lab_1/assets/98332019/634721b5-545f-4233-8622-fdaa76f9e962)
+![vivado08](https://github.com/bol-edu/course-lab_1/assets/98332019/92315a20-3e6e-4e66-bb1d-ac35b829d0b5)
+
+* Vivado block design as Workbook p.16 ~ p.20.
+* Generate Bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs (Vivado launching runs) as Workbook p.20.
+* The Windows `MakeBit.bat` can not work on Ubuntu VM as Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `/home/ubuntu/course-lab_1/vivado`.
 ```console
 cd ~/course-lab_1
 cp ./vivado/vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
