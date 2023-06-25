@@ -25,7 +25,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 * Righ click on hls_ip/Source -> New Source File -> add `Multiplication.cpp` and `Multiplication.h` from `~/course-lab_1/hls_Multiplication`
 * Change original `#include "multiplication.h"` to `#include "Multiplication.h"` and comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` (as Workbook p.8 & p.9) in Multiplication.cpp, then save (ctrl-s).
   
-![hls03](https://github.com/bol-edu/course-lab_1/assets/98332019/78fc1878-678d-4a91-968a-b6c67b19011b)
+![hls03](https://github.com/bol-edu/course-lab_1/assets/98332019/988d6181-a8c9-40ff-a146-fd33940869f9)
 
 * Righ click on hls_ip/Test Bench -> New Source File -> add `MultipTester.cpp` from `~/course-lab_1/hls_Multiplication`
 * Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save (ctrl-s).
