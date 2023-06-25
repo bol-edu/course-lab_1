@@ -16,30 +16,31 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
   
 * Click Create Project and name Project `hls_ip` under directory `~/course-lab_1`
 
-![hls01](https://github.com/bol-edu/course-lab_1/assets/98332019/7c3da69d-97b3-4c03-8e10-51b5a8f26aff)
+![hls01](https://github.com/bol-edu/course-lab_1/assets/98332019/21a3a6e8-6f34-494b-a5eb-ef280aef8f70)
 
-* Change Part to `xc7z020clg400-1` which is explained as Workbook p.4.
+* No Add in Design Files & Testbench Files pages, then change Part to `xc7z020clg400-1` which is explained as Workbook p.4.
 
-![hls02](https://github.com/bol-edu/course-lab_1/assets/98332019/0441a8d3-9310-433f-a479-fa0d800af037)
+![hs02](https://github.com/bol-edu/course-lab_1/assets/98332019/13828340-eaf1-4fef-b0e7-61cbb53ccb54)
 
 * Righ click on hls_ip/Source -> New Source File -> add `Multiplication.cpp` and `Multiplication.h` from `~/course-lab_1/hls_Multiplication`
-* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in Multiplication.cpp and save.
+* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` and comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` (as Workbook p.8 & p.9) in Multiplication.cpp, then save (ctrl-s).
   
-![hls03](https://github.com/bol-edu/course-lab_1/assets/98332019/7ea308ab-c812-4b0f-9e63-6475a6637562)
+![hls03](https://github.com/bol-edu/course-lab_1/assets/98332019/78fc1878-678d-4a91-968a-b6c67b19011b)
 
 * Righ click on hls_ip/Test Bench -> New Source File -> add `MultipTester.cpp` from `~/course-lab_1/hls_Multiplication`
-* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save.
+* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save (ctrl-s).
 
-![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/db39411c-9fdf-4bc8-a961-6306a60c1895)
+![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/df7f1bfb-8ea1-4a73-b4d4-1693534b1198)
 
-* Set Synthesis Settings - Top Function name to `multip_2num` as Workbook p.6.
-* Comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` before running C Synthesis & Cosimulation as Workbook p.8 & p.9.
+* Project -> Project Settings -> Synthesis Settings - Top Function name to `multip_2num` as Workbook p.6.
 
-![hls05](https://github.com/bol-edu/course-lab_1/assets/98332019/177290ec-0bc1-4a69-bf7c-39d74d11b66a)
+![hls05](https://github.com/bol-edu/course-lab_1/assets/98332019/a98bf20a-4c5f-4a79-816f-a679d4ec591e)
 
 * Complete validations of C Simulation, C Synthesis, Cosimulation (Dump Trace all) and Open Wave Veiwer for your designed multiplier as Workbook p.7 ~ p.11.
 * Export RTL as IP as Workbook p.11. Your designed multiplier `multip_2num` saved as a IP in directory `~/course-lab_1/hls_ip` which can be reused in later Vivado block design.
   
+![hls07](https://github.com/bol-edu/course-lab_1/assets/98332019/e396a56d-9b78-4aff-98a6-c5dd9a3edc86)
+
 ## Vivado
 * Close Vitis HLS GUI and execute `vivado` as Workbook p.12.
 
