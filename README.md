@@ -30,7 +30,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 * Righ click on hls_ip/Test Bench -> New Source File -> add `MultipTester.cpp` from `~/course-lab_1/hls_Multiplication`
 * Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save (ctrl-s).
 
-![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/d040fe87-ecd7-442a-a3ce-244491f85ec2)
+![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/5d6e0ea8-26fc-4eb4-8a7a-0eef53a519ec)
 
 * Project -> Project Settings -> Synthesis Settings - Top Function name to `multip_2num` as Workbook p.6.
 
