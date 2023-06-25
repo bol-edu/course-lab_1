@@ -45,6 +45,13 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 
 ![vivado00](https://github.com/bol-edu/course-lab_1/assets/98332019/72290594-2f1d-43d3-a1dd-577c2e7f0ecd)
 
+* Click Create Project and name Project `vivado` under directory `~/course-lab_1`
+
+![vivado01](https://github.com/bol-edu/course-lab_1/assets/98332019/7c02e145-5673-4ae6-a750-389e2e2f85a1)
+![vivado02](https://github.com/bol-edu/course-lab_1/assets/98332019/59a863c1-ccd1-4bbc-93f6-57b1ffc4a507)
+![vivado03](https://github.com/bol-edu/course-lab_1/assets/98332019/61b4d83c-a5bc-4b23-ad2c-8307cb7fdcf0)
+![vivado04](https://github.com/bol-edu/course-lab_1/assets/98332019/8cbd7dce-4521-4b00-95f1-f844fde70b15)
+
 * Generate Bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs (Vivado launching runs) at Workbook p.20.
 * The Windows `MakeBit.bat` can not work on Ubuntu VM at Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `/home/ubuntu/course-lab_1/vivado` created at Workbook p.13.
 ```console
