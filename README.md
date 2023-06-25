@@ -30,16 +30,23 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 * Righ click on hls_ip/Test Bench -> New Source File -> add `MultipTester.cpp` from `~/course-lab_1/hls_Multiplication`
 * Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save (ctrl-s).
 
-![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/df7f1bfb-8ea1-4a73-b4d4-1693534b1198)
+![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/d040fe87-ecd7-442a-a3ce-244491f85ec2)
 
 * Project -> Project Settings -> Synthesis Settings - Top Function name to `multip_2num` as Workbook p.6.
 
 ![hls05](https://github.com/bol-edu/course-lab_1/assets/98332019/a98bf20a-4c5f-4a79-816f-a679d4ec591e)
 
 * Complete validations of C Simulation, C Synthesis, Cosimulation (Dump Trace all) and Open Wave Veiwer for your designed multiplier as Workbook p.7 ~ p.11.
+
+![hls07-1](https://github.com/bol-edu/course-lab_1/assets/98332019/8025a860-f03d-4885-941c-b3f697ff5b36)
+![hls07-2](https://github.com/bol-edu/course-lab_1/assets/98332019/e38662e6-23f5-420a-b768-bd2119f2ff8b)
+![hls07-3](https://github.com/bol-edu/course-lab_1/assets/98332019/58bb0a54-4106-49d3-8c57-1b359a1171f3)
+
 * Export RTL as IP as Workbook p.11. Your designed multiplier `multip_2num` saved as a IP in directory `~/course-lab_1/hls_ip` which can be reused in later Vivado block design.
-  
-![hls07](https://github.com/bol-edu/course-lab_1/assets/98332019/e396a56d-9b78-4aff-98a6-c5dd9a3edc86)
+    
+![hls08-0](https://github.com/bol-edu/course-lab_1/assets/98332019/6c3af30a-56ab-47ce-b33c-f17e1dad8823)
+![hls08-1](https://github.com/bol-edu/course-lab_1/assets/98332019/1bb55065-36c7-4840-bcde-8000cd7f2a48)
+
 
 ## Vivado
 * Close Vitis HLS GUI and execute `vivado` as Workbook p.12.
