@@ -23,12 +23,12 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![hs02](https://github.com/bol-edu/course-lab_1/assets/98332019/13828340-eaf1-4fef-b0e7-61cbb53ccb54)
 
 * Righ click on hls_ip/Source -> New Source File -> add `Multiplication.cpp` and `Multiplication.h` from `~/course-lab_1/hls_Multiplication`
-* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` and comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` (as Workbook p.8 & p.9) in Multiplication.cpp, then save (ctrl-s).
+* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` and comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` (as Workbook p.8 & p.9) in Multiplication.cpp, then save (ctrl+s).
   
 ![hls03](https://github.com/bol-edu/course-lab_1/assets/98332019/988d6181-a8c9-40ff-a146-fd33940869f9)
 
 * Righ click on hls_ip/Test Bench -> New Source File -> add `MultipTester.cpp` from `~/course-lab_1/hls_Multiplication`
-* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save (ctrl-s).
+* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save (ctrl+s).
 
 ![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/5d6e0ea8-26fc-4eb4-8a7a-0eef53a519ec)
 
@@ -38,7 +38,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 
 * Complete validations of C Simulation, C Synthesis, Cosimulation (Dump Trace all) and Open Wave Veiwer for your designed multiplier as Workbook p.7 ~ p.11.
 
-![hls07-1](https://github.com/bol-edu/course-lab_1/assets/98332019/8025a860-f03d-4885-941c-b3f697ff5b36)
+![hls07-1](https://github.com/bol-edu/course-lab_1/assets/98332019/33e40c06-760b-4b09-866b-48249c19892c)
 ![hls07-2](https://github.com/bol-edu/course-lab_1/assets/98332019/e38662e6-23f5-420a-b768-bd2119f2ff8b)
 ![hls07-3](https://github.com/bol-edu/course-lab_1/assets/98332019/58bb0a54-4106-49d3-8c57-1b359a1171f3)
 
@@ -69,7 +69,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 
 * Vivado block design as Workbook p.16 ~ p.20.
 * Generate Bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs (Vivado launching runs) as Workbook p.20.
-* The Windows `MakeBit.bat` can not work on Ubuntu VM as Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `/home/ubuntu/course-lab_1/vivado`.
+* The Windows `MakeBit.bat` can not work on Ubuntu VM as Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `~/course-lab_1/vivado`.
 ```console
 cd ~/course-lab_1
 cp ./vivado/vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
