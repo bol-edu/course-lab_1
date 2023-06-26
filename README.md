@@ -36,7 +36,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 
 ![hls05](https://github.com/bol-edu/course-lab_1/assets/98332019/a98bf20a-4c5f-4a79-816f-a679d4ec591e)
 
-* Complete validations of C Simulation, C Synthesis, Cosimulation (Dump Trace all) and Open Wave Veiwer for your designed multiplier as Workbook p.7 ~ p.11.
+* Complete validations of C Simulation, C Synthesis, Cosimulation (Dump Trace all) and Open Wave Veiwer for your multiplier as Workbook p.7 ~ p.11.
 
 ![hls07-1](https://github.com/bol-edu/course-lab_1/assets/98332019/33e40c06-760b-4b09-866b-48249c19892c)
 ![hls07-2](https://github.com/bol-edu/course-lab_1/assets/98332019/e38662e6-23f5-420a-b768-bd2119f2ff8b)
@@ -48,7 +48,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![hls08-3](https://github.com/bol-edu/course-lab_1/assets/98332019/01200611-106a-400e-a246-9348cd6e864e)
 ![hls08-4](https://github.com/bol-edu/course-lab_1/assets/98332019/3eead3bb-4eb8-48f2-a461-496d03bdf4f8)
 
-* Export RTL as IP as Workbook p.11. Your designed multiplier `multip_2num` saved as a IP in directory `~/course-lab_1/hls_ip` which can be reused in later Vivado block design.
+* Export RTL as IP as Workbook p.11. Your multiplier `multip_2num` saved as a IP in directory `~/course-lab_1/hls_ip` which can be reused in later Vivado block design.
     
 ![hls08-0](https://github.com/bol-edu/course-lab_1/assets/98332019/6c3af30a-56ab-47ce-b33c-f17e1dad8823)
 ![hls08-1](https://github.com/bol-edu/course-lab_1/assets/98332019/1bb55065-36c7-4840-bcde-8000cd7f2a48)
@@ -66,16 +66,42 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![vivado03](https://github.com/bol-edu/course-lab_1/assets/98332019/61b4d83c-a5bc-4b23-ad2c-8307cb7fdcf0)
 ![vivado04](https://github.com/bol-edu/course-lab_1/assets/98332019/8cbd7dce-4521-4b00-95f1-f844fde70b15)
 
-* Setting -> IP -> Repository -> IP Repositories -> ＋ -> ~/course-lab_1 -> hls_ip -> select -> Multip_2num -> OK
+* Add multiplier `multip_2num` IP to Vivado: Settings -> IP -> Repository -> IP Repositories -> ＋ -> ~/course-lab_1 -> hls_ip -> select -> Multip_2num -> OK
 
 ![vivado05](https://github.com/bol-edu/course-lab_1/assets/98332019/259b9725-1a62-4082-bddf-a821495b82e1)
 ![vivado06](https://github.com/bol-edu/course-lab_1/assets/98332019/8052fd17-46c0-425c-b866-102c55ff7c52)
 ![vivado07](https://github.com/bol-edu/course-lab_1/assets/98332019/634721b5-545f-4233-8622-fdaa76f9e962)
 ![vivado08](https://github.com/bol-edu/course-lab_1/assets/98332019/92315a20-3e6e-4e66-bb1d-ac35b829d0b5)
 
-* Vivado block design as Workbook p.16 ~ p.20.
-* Generate Bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs (Vivado launching runs) as Workbook p.20.
-* The Windows `MakeBit.bat` can not work on Ubuntu VM as Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `~/course-lab_1/vivado`. After copy bitstream files to `~/course-lab_1`, you can download `Multip2Num.bit` and `Multip2Num.hwh` via MobaXterm.
+* Create Block Design: double click Create Block Design -> add ZYNQ7 -> add multiplier `multip_2num` -> click regenerate layout -> click Run Block Automation -> double click ZYNQ7 block -> click Clock Configuration -> change to 100Mhz (due to your clock period is 10ns) -> click Run Connection Automation as Workbook p.16 ~ p.19.
+  
+![vivado-design00](https://github.com/bol-edu/course-lab_1/assets/98332019/c1cd1e65-c6f5-47b8-83be-4aea99f1f555)
+![vivado-design01](https://github.com/bol-edu/course-lab_1/assets/98332019/ff08bb92-f50e-4b7a-a950-d207ec452018)
+![vivado-design02](https://github.com/bol-edu/course-lab_1/assets/98332019/75f09f12-6303-45bd-b803-73eae499a8c2)
+![vivado-design03](https://github.com/bol-edu/course-lab_1/assets/98332019/8e6b8efd-82a1-4949-bb46-2d0a4938a0aa)
+![vivado-design04](https://github.com/bol-edu/course-lab_1/assets/98332019/61695bfc-18e6-45a6-a0ca-aa8a2592cfec)
+![vivado-design05](https://github.com/bol-edu/course-lab_1/assets/98332019/bb04d1cd-6082-4f31-b325-44277815a94b)
+![vivado-design06](https://github.com/bol-edu/course-lab_1/assets/98332019/a0f12ffd-0237-4065-a214-70e7d80ff7cc)
+![vivado-design07](https://github.com/bol-edu/course-lab_1/assets/98332019/5ce162c4-ffe6-4a85-8b1f-5ae4ca554401)
+![vivado-design08](https://github.com/bol-edu/course-lab_1/assets/98332019/6442ce22-51c4-4ebe-aa0d-68fcfd0aa0e5)
+![vivado-design09](https://github.com/bol-edu/course-lab_1/assets/98332019/0b70e8c7-e951-4c52-b240-382207b14268)
+![vivado-design10](https://github.com/bol-edu/course-lab_1/assets/98332019/e7072e59-6b7b-4b1d-bc68-09d9d11800dd)
+![vivado-design11](https://github.com/bol-edu/course-lab_1/assets/98332019/a4370a16-9423-4141-bef8-7f8af80a1756)
+![vivado-design12](https://github.com/bol-edu/course-lab_1/assets/98332019/22db7dfb-207b-4994-ad60-366050b2e4bc)
+
+* Right click design_1 in Sources window to generate HDL wrapper as Workbook p.20.
+
+![vivado-design13](https://github.com/bol-edu/course-lab_1/assets/98332019/a60db0f2-34d2-4539-85e4-7348a70bba4f)
+![vivado-design14](https://github.com/bol-edu/course-lab_1/assets/98332019/90d642f1-ee1d-4d62-b904-cca0847e2d13)
+![vivado-design15](https://github.com/bol-edu/course-lab_1/assets/98332019/b496d461-f64a-4c6b-b4c4-db4de30a679f)
+
+* Generate FPGA bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs as Workbook p.20. While you see Bitstream Generation Completed window pop (you can cancel the window), your bitstream files are ready to download.
+
+![vivado-design16](https://github.com/bol-edu/course-lab_1/assets/98332019/c4e78b6c-5e64-48ac-aab6-52b06f60d0a3)
+![vivado-design17](https://github.com/bol-edu/course-lab_1/assets/98332019/426258bf-c9b3-40fc-a976-0354320959f6)
+![vivado-design18](https://github.com/bol-edu/course-lab_1/assets/98332019/f336fc43-199b-4efe-a0ca-bf475900b21b)
+  
+* The Windows `MakeBit.bat` script can not work on Ubuntu VM as Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `~/course-lab_1/vivado`. After copy FPGA bitstream files to `~/course-lab_1`, you can download `Multip2Num.bit` and `Multip2Num.hwh` via MobaXterm.
 ```console
 cd ~/course-lab_1
 cp ./vivado/vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
@@ -121,7 +147,7 @@ Upload `Multip2Num.bit`, `Multip2Num.hwh` and [Multip2Num.ipynb](https://github.
 
 ![pynq02](https://github.com/bol-edu/course-lab_1/assets/98332019/b4981f5d-1f2d-459f-9236-b84130a43c6d)
 
-* Click `Multip2Num.ipynb` to open it in new tab and Run its cell.
+* Click `Multip2Num.ipynb` to open it in new tab and Run its cell. You have verified multiplier `multip_2num` work correctly on FPGA board.
 
 ![pynq_final-00](https://github.com/bol-edu/course-lab_1/assets/98332019/19ae614f-da84-44ca-a02d-fdbf8c737507)
 ![pynq_final-01](https://github.com/bol-edu/course-lab_1/assets/98332019/65210e08-ca9e-4178-9bc7-38cd0bf0860a)
