@@ -98,9 +98,9 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 * Generate FPGA bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs as Workbook p.20. While you see Bitstream Generation Completed window pop (you can cancel the window), your bitstream files are ready to download.
 
 ![vivado-design16](https://github.com/bol-edu/course-lab_1/assets/98332019/c4e78b6c-5e64-48ac-aab6-52b06f60d0a3)
-![vivado-design17](https://github.com/bol-edu/course-lab_1/assets/98332019/426258bf-c9b3-40fc-a976-0354320959f6)
-![vivado-design18](https://github.com/bol-edu/course-lab_1/assets/98332019/f336fc43-199b-4efe-a0ca-bf475900b21b)
-  
+![vivado-design17](https://github.com/bol-edu/course-lab_1/assets/98332019/70e1e43d-2ec0-4e1c-927d-cf39c5678b1e)
+![vivado-design18](https://github.com/bol-edu/course-lab_1/assets/98332019/f3510428-3eeb-4027-a73e-d0b544d72c97)
+
 * The Windows `MakeBit.bat` script can not work on Ubuntu VM as Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `~/course-lab_1/vivado`. After copy FPGA bitstream files to `~/course-lab_1`, you can download `Multip2Num.bit` and `Multip2Num.hwh` via MobaXterm.
 ```console
 cd ~/course-lab_1
