@@ -107,7 +107,7 @@ cd ~/course-lab_1
 cp ./vivado/vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
 cp ./vivado/vivado.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh ./Multip2Num.hwh
 ```
-![moba](https://github.com/bol-edu/course-lab_1/assets/98332019/222b5113-3ccb-4e73-ab67-40d47565ec70)
+![moba](https://github.com/bol-edu/course-lab_1/assets/98332019/ccfa2e5d-ae5a-40f0-9166-123b88009e01)
 
 ## PYNQ-Z2 Board
 * Rent your pynq-z2 board from OnlineFPGA and connect it via web browser
