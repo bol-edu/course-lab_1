@@ -42,6 +42,12 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![hls07-2](https://github.com/bol-edu/course-lab_1/assets/98332019/e38662e6-23f5-420a-b768-bd2119f2ff8b)
 ![hls07-3](https://github.com/bol-edu/course-lab_1/assets/98332019/58bb0a54-4106-49d3-8c57-1b359a1171f3)
 
+* Before Export RTL as IP, you need to remove comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` in `Multiplication.cpp` (ctrl+s) and re-run C Synthesis as Workbook p.11.
+
+![hls08-2](https://github.com/bol-edu/course-lab_1/assets/98332019/1591db57-de30-44c5-ac9a-ad248cd5f6f9)
+![hls08-3](https://github.com/bol-edu/course-lab_1/assets/98332019/01200611-106a-400e-a246-9348cd6e864e)
+
+
 * Export RTL as IP as Workbook p.11. Your designed multiplier `multip_2num` saved as a IP in directory `~/course-lab_1/hls_ip` which can be reused in later Vivado block design.
     
 ![hls08-0](https://github.com/bol-edu/course-lab_1/assets/98332019/6c3af30a-56ab-47ce-b33c-f17e1dad8823)
