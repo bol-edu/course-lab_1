@@ -71,7 +71,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![vivado05](https://github.com/bol-edu/course-lab_1/assets/98332019/259b9725-1a62-4082-bddf-a821495b82e1)
 ![vivado06](https://github.com/bol-edu/course-lab_1/assets/98332019/8052fd17-46c0-425c-b866-102c55ff7c52)
 ![vivado07](https://github.com/bol-edu/course-lab_1/assets/98332019/634721b5-545f-4233-8622-fdaa76f9e962)
-![vivado08](https://github.com/bol-edu/course-lab_1/assets/98332019/92315a20-3e6e-4e66-bb1d-ac35b829d0b5)
+![vivado08](https://github.com/bol-edu/course-lab_1/assets/98332019/9d768a3f-1783-429b-8803-a705a88db403)
 
 * Create Block Design: double click Create Block Design -> add ZYNQ7 -> add multiplier `multip_2num` -> click regenerate layout -> click Run Block Automation -> double click ZYNQ7 block -> click Clock Configuration -> change to 100Mhz (due to your clock period is 10ns) -> click Run Connection Automation as Workbook p.16 ~ p.19.
   
@@ -92,7 +92,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 * Right click design_1 in Sources window to generate HDL wrapper as Workbook p.20.
 
 ![vivado-design13](https://github.com/bol-edu/course-lab_1/assets/98332019/a60db0f2-34d2-4539-85e4-7348a70bba4f)
-![vivado-design14](https://github.com/bol-edu/course-lab_1/assets/98332019/90d642f1-ee1d-4d62-b904-cca0847e2d13)
+![vivado-design14](https://github.com/bol-edu/course-lab_1/assets/98332019/1e29a3ed-81de-4241-b48e-37153a6b9ec7)
 ![vivado-design15](https://github.com/bol-edu/course-lab_1/assets/98332019/b496d461-f64a-4c6b-b4c4-db4de30a679f)
 
 * Generate FPGA bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs as Workbook p.20. While you see Bitstream Generation Completed window pop (you can cancel the window), your bitstream files are ready to download.
