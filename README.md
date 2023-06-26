@@ -23,7 +23,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 ![hs02](https://github.com/bol-edu/course-lab_1/assets/98332019/13828340-eaf1-4fef-b0e7-61cbb53ccb54)
 
 * Righ click on hls_ip/Source -> New Source File -> add `Multiplication.cpp` and `Multiplication.h` from `~/course-lab_1/hls_Multiplication`
-* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` and comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` (as Workbook p.8 & p.9) in Multiplication.cpp, then save (ctrl+s).
+* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` and comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` in Multiplication.cpp (as Workbook p.8 & p.9), then save (ctrl+s).
   
 ![hls03](https://github.com/bol-edu/course-lab_1/assets/98332019/988d6181-a8c9-40ff-a146-fd33940869f9)
 
@@ -46,7 +46,7 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 
 ![hls08-2](https://github.com/bol-edu/course-lab_1/assets/98332019/1591db57-de30-44c5-ac9a-ad248cd5f6f9)
 ![hls08-3](https://github.com/bol-edu/course-lab_1/assets/98332019/01200611-106a-400e-a246-9348cd6e864e)
-
+![hls08-4](https://github.com/bol-edu/course-lab_1/assets/98332019/3eead3bb-4eb8-48f2-a461-496d03bdf4f8)
 
 * Export RTL as IP as Workbook p.11. Your designed multiplier `multip_2num` saved as a IP in directory `~/course-lab_1/hls_ip` which can be reused in later Vivado block design.
     
@@ -75,12 +75,14 @@ The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022
 
 * Vivado block design as Workbook p.16 ~ p.20.
 * Generate Bitstream takes about 18 minutes to finish on Ubuntu VM (8GB memory & 2 vcpu of i7＠2.20GHz) with 2 jobs (Vivado launching runs) as Workbook p.20.
-* The Windows `MakeBit.bat` can not work on Ubuntu VM as Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `~/course-lab_1/vivado`.
+* The Windows `MakeBit.bat` can not work on Ubuntu VM as Workbook p.21, please refer the provided copy example. The copy example assume your Vivado project is `~/course-lab_1/vivado`. After copy bitstream files to `~/course-lab_1`, you can download `Multip2Num.bit` and `Multip2Num.hwh` via MobaXterm.
 ```console
 cd ~/course-lab_1
 cp ./vivado/vivado.runs/impl_1/design_1_wrapper.bit ./Multip2Num.bit
 cp ./vivado/vivado.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh ./Multip2Num.hwh
 ```
+![moba](https://github.com/bol-edu/course-lab_1/assets/98332019/222b5113-3ccb-4e73-ab67-40d47565ec70)
+
 ## PYNQ-Z2 Board
 * Rent your pynq-z2 board from OnlineFPGA and connect it via web browser
 ```
@@ -119,8 +121,9 @@ Upload `Multip2Num.bit`, `Multip2Num.hwh` and [Multip2Num.ipynb](https://github.
 
 ![pynq02](https://github.com/bol-edu/course-lab_1/assets/98332019/b4981f5d-1f2d-459f-9236-b84130a43c6d)
 
-* Click `Multip2Num.ipynb` to open in new tab and Run its cell.
+* Click `Multip2Num.ipynb` to open it in new tab and Run its cell.
 
-![pynq03](https://github.com/bol-edu/course-lab_1/assets/98332019/ff06fc30-c7c5-4691-afb7-49690c5b22cd)
+![pynq_final-00](https://github.com/bol-edu/course-lab_1/assets/98332019/19ae614f-da84-44ca-a02d-fdbf8c737507)
+![pynq_final-01](https://github.com/bol-edu/course-lab_1/assets/98332019/65210e08-ca9e-4178-9bc7-38cd0bf0860a)
 
 
