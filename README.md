@@ -7,7 +7,7 @@ PYNQ-Z2 SD card image: v2.7
 # Running 2022.1-Workbook-Lab1 on Ubuntu VM
 The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022.1/2022.1-Workbook-Lab1.pdf) was tested on Windows host Vitis. While you running Workbook on Ubuntu VM, some items are needed to concern in following experimental steps.
 
-## Install Package
+## Install Prerequisite Package
 ```Console
 sudo apt-get install build-essential -y
 ```
@@ -28,12 +28,12 @@ sudo apt-get install build-essential -y
 ![hs02](https://github.com/bol-edu/course-lab_1/assets/98332019/13828340-eaf1-4fef-b0e7-61cbb53ccb54)
 
 * Righ click on hls_ip/Source -> New Source File -> add `Multiplication.cpp` and `Multiplication.h` from `~/course-lab_1/hls_Multiplication`
-* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` and comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` in Multiplication.cpp (as Workbook p.8 & p.9), then save (ctrl+s).
+* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` (Ubuntu/Linux is case sensitivity) and comment out `#pragma HLS INTERFACE ap_ctrl_none port=return` in Multiplication.cpp (as Workbook p.8 & p.9), then save (ctrl+s).
   
 ![hls03](https://github.com/bol-edu/course-lab_1/assets/98332019/988d6181-a8c9-40ff-a146-fd33940869f9)
 
 * Righ click on hls_ip/Test Bench -> New Source File -> add `MultipTester.cpp` from `~/course-lab_1/hls_Multiplication`
-* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` in MultipTester.cpp and save (ctrl+s).
+* Change original `#include "multiplication.h"` to `#include "Multiplication.h"` (Ubuntu/Linux is case sensitivity) in MultipTester.cpp and save (ctrl+s).
 
 ![hls04](https://github.com/bol-edu/course-lab_1/assets/98332019/5d6e0ea8-26fc-4eb4-8a7a-0eef53a519ec)
 
