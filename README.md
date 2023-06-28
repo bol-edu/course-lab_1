@@ -7,6 +7,11 @@ PYNQ-Z2 SD card image: v2.7
 # Running 2022.1-Workbook-Lab1 on Ubuntu VM
 The [2022.1-Workbook-Lab1.pdf](https://github.com/bol-edu/course-lab_1/blob/2022.1/2022.1-Workbook-Lab1.pdf) was tested on Windows host Vitis. While you running Workbook on Ubuntu VM, some items are needed to concern in following experimental steps.
 
+## Install Package
+```Console
+sudo apt-get install build-essential -y
+```
+
 ## Vitis HLS
 * The Vitis HLS can be invoked by two ways: (1) using MobaXterm SSH to Ubuntu VM and executing `vitis_hls` (2) opening Ubuntu VM terminal and executing `vitis_hls`(recommended).
 * `vitis_hls` is running as a GUI. It is maybe slow under MobaXterm connection and while remote GUI is not working you need to restart MobaXterm.
