@@ -9,3 +9,6 @@
 `source <Vitis_install_path>/Xilinx/Vitis/2022.1/settings64.sh`  
 * [Manual of Vitis_on_Ubuntu_VM](https://github.com/bol-edu/course-lab_1/files/11901796/Vitis_on_Ubuntu_VM.pdf)
 
+## Notice
+Don't click Yes, Upgrade Now or execute `sudo apt upgrade` in your Ubuntu VM. The Vitis maybe not working.
+![000](https://github.com/bol-edu/course-lab_1/assets/98332019/2aef1059-9bb8-4f84-b341-ecb0ce45e8ba)
