@@ -7,7 +7,8 @@
 * Offical installation guide: https://docs.xilinx.com/r/2022.1-English/ug1400-vitis-embedded/Installation-Requirements  
 * Add below line to `/home/<user>/.bashrc` after completing Vitis installation  
 `source <Vitis_install_path>/Xilinx/Vitis/2022.1/settings64.sh`  
-* [Manual of Vitis_on_Ubuntu_VM](https://github.com/bol-edu/course-lab_1/files/11901796/Vitis_on_Ubuntu_VM.pdf)
+* [Manual of Vitis_on_Ubuntu_VM](https://github.com/bol-edu/course-lab_1/files/11953105/Vitis_on_Ubuntu_VM.pdf)
+
 
 ## Notice
 Do not click Yes, Upgrade Now or execute `sudo apt upgrade` in your Ubuntu VM. The Vitis maybe not working.
